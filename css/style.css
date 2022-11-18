@@ -1,0 +1,47 @@
+
+
+html{
+    box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after{
+    box-sizing: inherit;
+}
+
+a{
+    color: inherit;
+    text-decoration: none;
+}
+
+.container{
+    padding: 0 10px;
+    margin: 0 auto;
+    max-width: 1220px;
+}
+body{
+    font-family: 'Roboto Condensed', sans-serif;
+    color: #040404;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 120%;
+}
+
+.header{
+    padding-top: 25px;
+}
+.nav{
+    display: flex;
+    justify-content: space-between;
+}
+
+.menu-list{
+    padding-top: 25px;
+    display: flex;
+    gap: 0 40px;
+}
+.menu-link{
+    color: #363636;
+    font-size: 16px;
+}
