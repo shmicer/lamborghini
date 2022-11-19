@@ -1,4 +1,7 @@
-
+@font-face {
+    font-family: 'Impact', sans-serif;
+    src: url(../fonts/impact.woff2);
+}
 
 html{
     box-sizing: border-box;
@@ -30,6 +33,10 @@ body{
 
 .header{
     padding-top: 25px;
+    position: absolute;
+    left: 0;
+    right: 0;
+    background: linear-gradient(180deg, #D8D4CA 0%, rgba(217, 217, 217, 0) 100%);
 }
 .nav{
     display: flex;
@@ -44,4 +51,59 @@ body{
 .menu-link{
     color: #363636;
     font-size: 16px;
+}
+.menu-left{
+    padding-left: 25px;
+}
+.menu-right{
+    padding-right: 80px;
+}
+.promo{
+    background-image: url(../images/promo.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    
+}
+.promo__inner{
+    text-align: center;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    padding-top: 100px;
+}
+.title{
+    font-family: 'Impact', sans-serif;
+    font-weight: 400;
+    font-size: 76px;
+    line-height: 93px;
+    letter-spacing: 0.08em;
+    margin-bottom: 10px;
+}
+.subtitle{
+    font-family: 'Impact', sans-serif;
+    font-weight: 400;
+    font-size: 48px;
+    line-height: 59px;
+    border-bottom: 1px solid #040404;
+    margin-bottom: 10px;
+    align-self: center;
+}
+.subtitle span{
+    padding: 10px 0;
+    display: block;
+    color: #9F6B08;
+    font-weight: 400;
+    font-size: 34px;
+    line-height: 34px;
+}
+.promo__text{
+    color: #363636;
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+.promo__arrow{
+    margin-top: auto;
+    margin-bottom: 30px;
+    align-self: center;
 }
