@@ -196,6 +196,8 @@ body{
 }
 
 .evo {
+    font-size: 14px;
+    margin-bottom: 100px;
 }
 .evo-black {
     background-color: #363636;
@@ -204,7 +206,25 @@ body{
 }
 
 .evo-black__inner {
-
+    position: relative;
+}
+.evo-black__inner ::before{
+    content: '';
+    background-image: url(../images/dec-1.svg);
+    width: 185px;
+    position: absolute;
+    height: 213px;
+    top: 180px;
+    left: -130px;
+}
+.evo-black__inner ::after{
+    content: '';
+    background-image: url(../images/dec-2.svg);
+    width: 498px;
+    position: absolute;
+    height: 572px;
+    top: 260px;
+    left: -30px;
 }
 .evo-black__info {
     display: flex;
@@ -227,17 +247,105 @@ body{
 }
 .evo-black__img {
     display: block;
-    margin: 200px auto 60px;
+    margin: 170px auto 60px;
+    position: relative;
+    z-index: 1;
 }
-.evo-__descr-list {
+.evo__descr-list {
+    display: flex;
+    justify-content: center;
+    gap: 0 60px;
 }
+.evo__descr-list dd{
+    text-transform: uppercase;
+}
+
 .evo-white {
+
 }
 .evo-white__inner {
+    padding-top: 125px;
+    position: relative;
 }
+.evo-white__inner ::before{
+    content: '';
+    background-image: url(../images/dec-3.png);
+    width: 274px;
+    position: absolute;
+    height: 257px;
+    top: -40px;
+    left: 360px;
+}
+.evo-white__inner ::after{
+    content: '';
+    background-image: url(../images/dec-4.png);
+    width: 324px;
+    position: absolute;
+    height: 311px;
+    top: 139px;
+    left: 594px;
+}
+
 .evo-white__text {
+    margin-bottom: 30px;
+}
+.evo-white__text:first-child{
+    max-width: 285px;
+}
+.evo-white__text:nth-child(2){
+    max-width: 437px;
+}
+.evo-white__text:nth-child(3){
+    max-width: 590px;
 }
 .evo-white__video {
+    margin-top: 100px;
+    background-image: url(../images/evo-video.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 258px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
 }
-.evo-white__video-link {
+.evo-white__video-link span {
+    display: block;
+    color: #fff;
+}
+
+.review {
+    margin-bottom: 14px;
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.review__content {
+    display: block;
+    margin-bottom: 30px;
+}
+
+.review__content .review__title {
+    margin-bottom: 3px;
+    font-size: 12px;
+    line-height: 120%;
+    color: #9F6B08;
+}
+.review__subtitle {
+    margin-bottom: 10px;
+    font-weight: 700;
+}
+.review__text{
+    max-width: 434px;
+}
+.review__content-second .review__text{
+    max-height: 67px;
+    overflow: hidden;
+    text-overflow:ellipsis;
+}
+.review-img {
+    max-width: 394px;
+    max-height: 286px;
 }
