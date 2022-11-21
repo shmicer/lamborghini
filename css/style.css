@@ -17,6 +17,10 @@ a{
     color: inherit;
     text-decoration: none;
 }
+li{
+    list-style: none;
+}
+
 
 .big-container{
     padding: 0 10px;
@@ -316,10 +320,10 @@ body{
 }
 
 .review {
-    margin-bottom: 14px;
     display: flex;
     justify-content: space-between;
     gap: 20px;
+    
 }
 
 .review__content {
@@ -339,6 +343,7 @@ body{
 }
 .review__text{
     max-width: 434px;
+    max-height: 69px;
 }
 .review__content-second .review__text{
     max-height: 67px;
@@ -346,6 +351,65 @@ body{
     text-overflow:ellipsis;
 }
 .review-img {
+    margin-bottom: 100px;
     max-width: 394px;
     max-height: 286px;
+}
+.footer {
+    background: #363636;
+    color: #ffffff;
+    font-family: 'Roboto Condensed', sans-serif;
+}
+
+.footer__main{
+    display: flex;
+    justify-content: space-between;
+}
+.footer__big-title{
+    text-transform: uppercase;
+    padding-top: 100px;
+    margin-bottom: 50px;
+    font-weight: 300;
+    font-size: 32px;
+    line-height: 38px;
+}
+.footer__contacts {
+    display: block;
+}
+.footer__contacts-base {
+    margin-bottom: 40px;
+    
+}
+.footer__title {
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 120%;
+    margin-bottom: 20px;
+}
+.contacts__item {
+    font-size: 15px;
+    line-height: 18px;
+    margin-bottom: 10px;
+}
+.footer__contacts-tickets {
+    margin-bottom: 40px;
+}
+.footer__social {
+    display: flex;
+    gap: 20px;
+}
+.footer__social-link {
+}
+.footer__adress {
+    margin-bottom: 87px;
+}
+.footer__copyright {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+iframe{
+    -webkit-filter: grayscale(100%);
+    filter: grayscale(100%);
 }
